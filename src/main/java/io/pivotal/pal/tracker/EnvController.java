@@ -15,7 +15,7 @@ public class EnvController {
     private String memLimit;
     private String CfInstIndex;
 
-    public EnvController(@Value("${PORT1:NOT SET}") String port,@Value("${MEMORY_LIMIT:NOT SET}") String memLimit, @Value("${CF_INSTANCE_INDEX:NOT SET}") String CfInstIndex, @Value("${CF_INSTANCE_ADDR:NOT SET}") String cfInstAdd) {
+    public EnvController(@Value("${PORT:NOT SET}") String port,@Value("${MEMORY_LIMIT:NOT SET}") String memLimit, @Value("${CF_INSTANCE_INDEX:NOT SET}") String CfInstIndex, @Value("${CF_INSTANCE_ADDR:NOT SET}") String cfInstAdd) {
 
         this.port=port;
         this.memLimit=memLimit;
